@@ -1,0 +1,25 @@
+*{background-color: rgb(209, 138, 141);}
+h1 {
+    font-family: "cursiv", "sans-serif";
+    margin: auto;
+    padding: 10px;
+    background-color: rgb(204, 21, 67);
+}
+   
+.letra {
+        color: rgb(34, 126, 106);    
+}
+
+.wrapper{
+    display:grid;
+    grid-template-columns: repeat(3,9fr);
+    grid-gap: 15px;
+    grid-auto-rows: minmax(50px, auto);
+    padding:10%;
+}
+.borde{
+ padding: 7%;
+ margin: 5%;
+ background-color: rgb(145, 114, 121);
+ text-align: center;
+}

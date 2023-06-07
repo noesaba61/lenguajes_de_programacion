@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html >
+ <head>
+    <meta charset="UTF -8">
+    <title>variables</title>
+ </head>
+ <body>
+    <form id="myfrom">
+        <iabel for ="name">Nombre</iabel>
+        <input type="text" id = "name" name="name"><br><br>
+
+        <iabel for ="name">Apellido</iabel>
+        <input type="text" id = "Apellido" name="Apellido"><br><br>
+        <input type="submit" value="Enviar" onclick="sudmitfrom(event)"></input>
+
+    </form>
+    <script>
+        function sudmitfrom(event){
+            event.preventDefault();
+        
+            var name =document.getElementById('name').value;
+            var Apellido = document.getElementById('Apellido').value;
+
+
+            var persona = {
+                Nombre: name,
+                Apellido: Apellido
+            };
+            console.log(persona)
+        }
+        
+    </script>
+ </body>   
